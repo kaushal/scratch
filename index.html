@@ -1,6 +1,6 @@
 <html>
     <body>
-        1. <a href='javascript:(function(){total=0;length=$("li").length;$("li").each(function(e){total+=parseInt(this.textContent[1])});alert("Your average is: "+total/length)})()'>Averages</a> -- Drag me up to your bookmarks bar ^^^^^
+        1. <a href='javascript:(function(){total=0;length=0;acceptableResponses=[0,1,2,3,4];$("li").each(function(e){currentRating=parseInt(this.textContent[1]);if(acceptableResponses.indexOf(currentRating)>-1){length++;total+=currentRating}});alert("Your average is: "+total/length); console.log(total, length)})()'>Averages</a> -- Drag me up to your bookmarks bar ^^^^^
         <br>
         2. Then go to <a href='http://apply.hackny.org/users'>http://apply.hackny.org/users</a> and click on the bookmarklet!
     </body>
